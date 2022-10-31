@@ -257,3 +257,15 @@ void array_value(int *ptr)
     printf("%d",count);
 
  }
+int rev_num(int num){
+    int revNum =0,remainder;
+      while (num != 0){
+
+        remainder = num % 10;
+
+        revNum = revNum * 10 + remainder;
+
+        num = num/10;
+      }
+    return revNum;
+}
